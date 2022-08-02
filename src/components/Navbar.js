@@ -10,9 +10,7 @@ const Navbar = () => (
         <NavLink
           to="/"
           className="rockets"
-          style={(isActive) => ({
-            color: isActive ? 'green' : 'blue',
-          })}
+          style={({ isActive }) => (isActive ? { color: 'aqua' } : { color: 'orange' })}
         >
           Rockets
         </NavLink>
@@ -20,9 +18,7 @@ const Navbar = () => (
         <NavLink
           to="/missions"
           className="CATEGORIES"
-          style={(isActive) => ({
-            color: isActive ? 'green' : 'blue',
-          })}
+          style={({ isActive }) => (isActive ? { color: 'aqua' } : { color: 'orange' })}
         >
           Missions
         </NavLink>
@@ -30,9 +26,7 @@ const Navbar = () => (
         <NavLink
           to="/myprofile"
           className="CATEGORIES"
-          style={(isActive) => ({
-            color: isActive ? 'green' : 'blue',
-          })}
+          style={({ isActive }) => (isActive ? { color: 'aqua' } : { color: 'orange' })}
         >
           My Profile
         </NavLink>
