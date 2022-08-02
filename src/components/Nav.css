@@ -1,0 +1,22 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar > * {
+  padding: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.navTitle {
+  margin: 5px;
+}
+
+.logo {
+  width: 80px;
+}
