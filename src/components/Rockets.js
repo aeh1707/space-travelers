@@ -1,8 +1,8 @@
-import Navbar from './Navbar';
+import Nav from './Nav';
 
 const Rockets = () => (
   <>
-    <Navbar />
+    <Nav />
     <h1>Rockets</h1>
   </>
 );

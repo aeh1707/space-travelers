@@ -1,8 +1,8 @@
-import Navbar from './Navbar';
+import Nav from './Nav';
 
 const Missions = () => (
   <>
-    <Navbar />
+    <Nav />
     <h1>Missions</h1>
   </>
 );

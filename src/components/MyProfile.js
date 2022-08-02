@@ -1,8 +1,8 @@
-import Navbar from './Navbar';
+import Nav from './Nav';
 
 const MyProfile = () => (
   <>
-    <Navbar />
+    <Nav />
     <h1>MyProfile</h1>
   </>
 );

@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
-const Navbar = () => (
+const Nav = () => (
   <div className="nav-container">
     <div className="navbar">
       <img src="/planet.png" alt="logo" className="profile" />
@@ -35,4 +35,4 @@ const Navbar = () => (
   </div>
 );
 
-export default Navbar;
+export default Nav;
