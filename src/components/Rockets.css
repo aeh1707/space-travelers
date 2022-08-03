@@ -1,0 +1,13 @@
+.rocket {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+.rocket-image {
+  width: 20vw;
+}
+
+.rocket-info {
+  width: 70vw;
+}
