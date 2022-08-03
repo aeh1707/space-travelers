@@ -26,3 +26,16 @@ td {
 .buttons {
   width: 12%;
 }
+
+.join {
+    background: none;
+    padding: 5%;
+    width: 90%;
+}
+
+.leave {
+    background: none;
+    width: 90%;
+    padding: 5%;
+    border: 2px solid crimson;
+}

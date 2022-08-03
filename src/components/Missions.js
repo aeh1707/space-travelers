@@ -38,8 +38,8 @@ const Missions = () => {
                 {mission.reserved && <span> Active Member</span> }
               </td>
               <td className="buttons">
-                {!mission.reserved && <button type="button" onClick={() => handleReserve(mission.mission_id)}>Join Mission</button>}
-                {mission.reserved && <button type="button" onClick={() => handleLeave(mission.mission_id)}>Leave Mission</button>}
+                {!mission.reserved && <button type="button" onClick={() => handleReserve(mission.mission_id)} className="join">Join Mission</button>}
+                {mission.reserved && <button type="button" onClick={() => handleLeave(mission.mission_id)} className="leave">Leave Mission</button>}
 
               </td>
             </tr>
