@@ -33,9 +33,9 @@ const Missions = () => {
               <td className="bold">{mission.mission_name}</td>
               <td className="desc">{mission.description}</td>
               <td className="buttons">
-                {!mission.reserved && <span> NOT A MEMBER</span> }
+                {!mission.reserved && <span className="notMember generalM"> NOT A MEMBER</span> }
                 {' '}
-                {mission.reserved && <span> Active Member</span> }
+                {mission.reserved && <span className="member generalM"> Active Member</span> }
               </td>
               <td className="buttons">
                 {!mission.reserved && <button type="button" onClick={() => handleReserve(mission.mission_id)} className="join padding-bg">Join Mission</button>}
