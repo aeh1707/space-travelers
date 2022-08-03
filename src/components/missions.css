@@ -27,15 +27,16 @@ td {
   width: 12%;
 }
 
+.padding-bg {
+    padding: 5%;
+    background: none;    
+}
+
 .join {
-  background: none;
-  padding: 5%;
   width: 90%;
 }
 
 .leave {
-  background: none;
   width: 90%;
-  padding: 5%;
   border: 2px solid crimson;
 }
