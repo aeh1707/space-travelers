@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import Nav from './Nav';
-import { fetchMissions } from '../redux/missions/missions';
+import fetchMissions from '../redux/missions/missionActions';
 
 const Missions = () => {
   const dispatch = useDispatch();
