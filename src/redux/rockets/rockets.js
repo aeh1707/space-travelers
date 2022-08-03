@@ -21,7 +21,7 @@ export const fetchRockets = createAsyncThunk(
         id: rocket.id,
         rocket_name: rocket.rocket_name,
         description: rocket.description,
-        flickr_images: rocket.flickr_images,
+        flickr_images: rocket.flickr_images[0],
       });
     });
     return RocketsList;

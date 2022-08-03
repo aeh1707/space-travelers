@@ -1,3 +1,4 @@
+import './Rockets.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import Nav from './Nav';
@@ -13,13 +14,17 @@ const Rockets = () => {
   return (
     <>
       <Nav />
-      <h1>Rockets</h1>
-      {rockets.map((rocket) => (
-        <article key={rocket.id}>
-          <h2>{rocket.rocket_name}</h2>
-          <p>{ rocket.description }</p>
-        </article>
-      ))}
+      <section id="rockets">
+        {rockets.map((rocket) => (
+          <article className="rocket" key={rocket.id}>
+            <img className="rocket-image" src={rocket.flickr_images} alt={`${rocket.rocket_name} rocket`} />
+            <div className="rocket-info">
+              <h2 className="rocket-name">{rocket.rocket_name}</h2>
+              <p className="rocket-description">{rocket.description}</p>
+            </div>
+          </article>
+        ))}
+      </section>
     </>
   );
 };
