@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import Nav from './Nav';
-import { fetchMissions } from '../redux/missions/missions';
+import fetchMissions, { reserveMission, leaveMission } from '../redux/missions/missionActions';
 
 const Missions = () => {
   const dispatch = useDispatch();
@@ -9,6 +9,12 @@ const Missions = () => {
     dispatch(fetchMissions());
   }, []);
   const missions = useSelector((state) => state.missions);
+  const handleReserve = (id) => {
+    dispatch(reserveMission(id));
+  };
+  const handleLeave = (id) => {
+    dispatch(leaveMission(id));
+  };
   return (
     <>
       <Nav />
@@ -17,7 +23,8 @@ const Missions = () => {
         <div key={mission.mission_id}>
           <h2>{mission.mission_name}</h2>
           <p>{ mission.description }</p>
-          {mission.joined === false && <button type="button">Join Mission</button> }
+          {!mission.reserved && <button type="button" onClick={() => handleReserve(mission.mission_id)}>Join Mission</button>}
+          {mission.reserved && <button type="button" onClick={() => handleLeave(mission.mission_id)}>Leave Mission</button> }
         </div>
       ))}
     </>
