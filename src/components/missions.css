@@ -1,14 +1,12 @@
-table,tr, td {
+table,
+tr,
+td {
   border: 1px solid gainsboro;
 }
 
-thead {
-  padding: 4% auto;
-}
-
 table {
-    border-collapse: collapse;
-    margin: 5%;
+  border-collapse: collapse;
+  margin: 5%;
 }
 
 .bold {
@@ -18,7 +16,7 @@ table {
 }
 
 td {
-    padding: 1%;
+  padding: 1%;
 }
 
 .desc {
@@ -26,5 +24,5 @@ td {
 }
 
 .buttons {
-    width: 12%;
+  width: 12%;
 }
