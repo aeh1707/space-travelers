@@ -42,15 +42,15 @@ td {
 }
 
 .generalM {
-    border-radius: 2px;
-    color: white;
-    padding: 1%;
+  border-radius: 2px;
+  color: white;
+  padding: 1%;
 }
 
 .member {
-    background: #31a2b8;
+  background: #31a2b8;
 }
 
 .notMember {
-    background: #6d757d;
+  background: #6d757d;
 }
