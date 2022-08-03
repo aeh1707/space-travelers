@@ -1,15 +1,12 @@
 import './missions.css';
-import { useSelector, useDispatch } from 'react-redux';
-import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { PropTypes } from 'prop-types';
 import Nav from './Nav';
-import fetchMissions, { reserveMission, leaveMission } from '../redux/missions/missionActions';
+import { reserveMission, leaveMission } from '../redux/missions/missionActions';
 
-const Missions = () => {
+const Missions = (props) => {
+  const { missions } = props;
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchMissions());
-  }, []);
-  const missions = useSelector((state) => state.missions);
   const handleReserve = (id) => {
     dispatch(reserveMission(id));
   };
@@ -33,9 +30,9 @@ const Missions = () => {
               <td className="bold">{mission.mission_name}</td>
               <td className="desc">{mission.description}</td>
               <td className="buttons">
-                {!mission.reserved && <span> NOT A MEMBER</span> }
+                {!mission.reserved && <span className="notMember generalM"> NOT A MEMBER</span> }
                 {' '}
-                {mission.reserved && <span> Active Member</span> }
+                {mission.reserved && <span className="member generalM"> Active Member</span> }
               </td>
               <td className="buttons">
                 {!mission.reserved && <button type="button" onClick={() => handleReserve(mission.mission_id)} className="join padding-bg">Join Mission</button>}
@@ -48,4 +45,9 @@ const Missions = () => {
     </>
   );
 };
+
+Missions.propTypes = {
+  missions: PropTypes.instanceOf(Array).isRequired,
+};
+
 export default Missions;

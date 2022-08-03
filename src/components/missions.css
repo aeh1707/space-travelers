@@ -40,3 +40,17 @@ td {
   width: 90%;
   border: 2px solid crimson;
 }
+
+.generalM {
+  border-radius: 2px;
+  color: white;
+  padding: 1%;
+}
+
+.member {
+  background: #31a2b8;
+}
+
+.notMember {
+  background: #6d757d;
+}
