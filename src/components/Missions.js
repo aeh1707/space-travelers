@@ -40,11 +40,9 @@ const Missions = () => {
               <td className="buttons">
                 {!mission.reserved && <button type="button" onClick={() => handleReserve(mission.mission_id)} className="join">Join Mission</button>}
                 {mission.reserved && <button type="button" onClick={() => handleLeave(mission.mission_id)} className="leave">Leave Mission</button>}
-
               </td>
             </tr>
           ))}
-
         </tbody>
       </table>
     </>
