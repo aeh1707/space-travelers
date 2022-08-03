@@ -1,3 +1,4 @@
+import './missions.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import Nav from './Nav';
@@ -18,15 +19,32 @@ const Missions = () => {
   return (
     <>
       <Nav />
-      <h1>Missions</h1>
-      {missions.map((mission) => (
-        <div key={mission.mission_id}>
-          <h2>{mission.mission_name}</h2>
-          <p>{ mission.description }</p>
-          {!mission.reserved && <button type="button" onClick={() => handleReserve(mission.mission_id)}>Join Mission</button>}
-          {mission.reserved && <button type="button" onClick={() => handleLeave(mission.mission_id)}>Leave Mission</button> }
-        </div>
-      ))}
+      <table>
+        <thead className="bold">
+          <tr>
+            <td>Mission</td>
+            <td>Description</td>
+            <td>Status</td>
+          </tr>
+        </thead>
+        <tbody>
+          {missions.map((mission) => (
+            <tr key={mission.mission_id}>
+              <td className="bold">{mission.mission_name}</td>
+              <td className="desc">{mission.description}</td>
+              <td className="buttons">
+                {!mission.reserved && <span> NOT A MEMBER</span> }
+                {' '}
+                {mission.reserved && <span> Active Member</span> }
+              </td>
+              <td className="buttons">
+                {!mission.reserved && <button type="button" onClick={() => handleReserve(mission.mission_id)} className="join padding-bg">Join Mission</button>}
+                {mission.reserved && <button type="button" onClick={() => handleLeave(mission.mission_id)} className="leave padding-bg">Leave Mission</button>}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </>
   );
 };
