@@ -9,19 +9,18 @@ const Rockets = () => {
     dispatch(fetchRockets());
   }, []);
   const rockets = useSelector((state) => state.rockets);
-  console.log(rockets);
 
   return (
-  <>
-    <Nav />
-    <h1>Rockets</h1>
-    {rockets.map((rocket) => (
+    <>
+      <Nav />
+      <h1>Rockets</h1>
+      {rockets.map((rocket) => (
         <article key={rocket.id}>
           <h2>{rocket.rocket_name}</h2>
           <p>{ rocket.description }</p>
         </article>
       ))}
-  </>
-);
+    </>
+  );
 };
 export default Rockets;
