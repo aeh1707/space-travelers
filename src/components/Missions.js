@@ -1,15 +1,12 @@
 import './missions.css';
-import { useSelector, useDispatch } from 'react-redux';
-import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { PropTypes } from 'prop-types';
 import Nav from './Nav';
-import fetchMissions, { reserveMission, leaveMission } from '../redux/missions/missionActions';
+import { reserveMission, leaveMission } from '../redux/missions/missionActions';
 
-const Missions = () => {
+const Missions = (props) => {
+  const { missions } = props;
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchMissions());
-  }, []);
-  const missions = useSelector((state) => state.missions);
   const handleReserve = (id) => {
     dispatch(reserveMission(id));
   };
@@ -48,4 +45,9 @@ const Missions = () => {
     </>
   );
 };
+
+Missions.propTypes = {
+  missions: PropTypes.instanceOf(Array).isRequired,
+};
+
 export default Missions;
