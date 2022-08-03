@@ -14,17 +14,17 @@ const Rockets = () => {
   return (
     <>
       <Nav />
-      <section id="rockets">
+      <ul id="rockets">
         {rockets.map((rocket) => (
-          <article className="rocket" key={rocket.id}>
+          <li className="rocket" key={rocket.id}>
             <img className="rocket-image" src={rocket.flickr_images} alt={`${rocket.rocket_name} rocket`} />
             <div className="rocket-info">
               <h2 className="rocket-name">{rocket.rocket_name}</h2>
               <p className="rocket-description">{rocket.description}</p>
             </div>
-          </article>
+          </li>
         ))}
-      </section>
+      </ul>
     </>
   );
 };
