@@ -1,6 +1,8 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
 const GET_MISSIONS = 'GET_MISSIONS';
+export const RESERVE = 'RESERVE';
+export const LEAVE = 'LEAVE';
 
 const fetchMissions = createAsyncThunk(
   GET_MISSIONS, async () => {
@@ -18,4 +20,8 @@ const fetchMissions = createAsyncThunk(
     return dataArr;
   },
 );
+
+export const reserveMission = (id) => ({ type: RESERVE, payload: id });
+export const leaveMission = (id) => ({ type: LEAVE, payload: id });
+
 export default fetchMissions;
