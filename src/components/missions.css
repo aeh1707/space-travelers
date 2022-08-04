@@ -1,0 +1,56 @@
+table,
+tr,
+td {
+  border: 1px solid gainsboro;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 5%;
+}
+
+.bold {
+  font-weight: bold;
+  padding: 1%;
+  width: 10%;
+}
+
+td {
+  padding: 1%;
+}
+
+.desc {
+  width: 60%;
+}
+
+.buttons {
+  width: 12%;
+}
+
+.padding-bg {
+  padding: 5%;
+  background: none;
+}
+
+.join {
+  width: 90%;
+}
+
+.leave {
+  width: 90%;
+  border: 2px solid crimson;
+}
+
+.generalM {
+  border-radius: 2px;
+  color: white;
+  padding: 1%;
+}
+
+.member {
+  background: #31a2b8;
+}
+
+.notMember {
+  background: #6d757d;
+}

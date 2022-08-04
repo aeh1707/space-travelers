@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 2px solid yellow;
+}
+
+.navbar > * {
+  padding: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.navTitle {
+  margin: 5px;
+}
+
+.logo {
+  width: 80px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  width: 40vw;
+  gap: 15px;
+}

@@ -1,0 +1,24 @@
+.my-profile-container {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.myprofile {
+  display: flex;
+  gap: 25px;
+}
+
+.joined-missions,
+.reserved-rockets {
+  width: 30vw;
+}
+
+.myprofile ul {
+  list-style: none;
+  padding: 0;
+}
+
+.myprofile li {
+  padding: 20px;
+  border: 1px solid black;
+}

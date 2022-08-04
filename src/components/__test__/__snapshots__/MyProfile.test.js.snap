@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Jest test Match snapshot 1`] = `
+<div
+  class="my-profile-container"
+>
+  <div
+    class="myprofile"
+  >
+    <section
+      class="joined-missions"
+    >
+      <h2>
+        My Missions
+      </h2>
+      <ul />
+    </section>
+    <section
+      class="reserved-rockets"
+    >
+      <h2>
+        My Rockets
+      </h2>
+      <ul />
+    </section>
+  </div>
+</div>
+`;
