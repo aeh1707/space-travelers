@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Jest test Match snapshot 1`] = `
+<ul
+  id="rockets"
+/>
+`;
