@@ -10,9 +10,13 @@ import Rockets from './components/Rockets';
 import Missions from './components/Missions';
 import MyProfile from './components/MyProfile';
 import fetchMissions from './redux/missions/missionActions';
+import fetchRockets from './redux/rockets/rocketsFetch';
 
 const App = () => {
   const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchRockets());
+  }, []);
   useEffect(() => {
     dispatch(fetchMissions());
   }, []);
@@ -20,7 +24,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Rockets />} />
+        <Route path="/" element={<Rockets rockets={state.rockets} />} />
         <Route path="/missions" element={<Missions missions={state.missions} />} />
         <Route path="/myprofile" element={<MyProfile />} />
       </Routes>
