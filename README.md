@@ -29,7 +29,7 @@ run `npm run start`.
 
 ## Live Dempo
 
-[URL](https://62ebbe9e09eadc04048d5961--adorable-pothos-f51154.netlify.app/)
+[URL](https://62ebc3057145de0edca6b1e0--adorable-pothos-f51154.netlify.app/)
 
 ## Authors
 
