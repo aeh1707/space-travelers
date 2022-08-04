@@ -42,7 +42,7 @@ run `npm run start`.
 👤 **Sajid Munawar**
 
 - GitHub: [@githubhandle](https://github.com/sajid-munawar)
-- Twitter: [@SajidMunawarDev](https://twitter.com/twitterhandle)
+- Twitter: [@SajidMunawarDev](https://twitter.com/SajidMunawarDev)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/sajid-munawar-41ba26180/)
 
 ## 🤝 Contributing
