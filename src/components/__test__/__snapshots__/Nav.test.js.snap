@@ -7,16 +7,20 @@ exports[`Jest test Match Snapshot 1`] = `
   <div
     class="navbar"
   >
-    <img
-      alt="logo"
-      class="logo"
-      src="/planet.png"
-    />
-    <h1
-      class="navTitle"
+    <div
+      class="brand"
     >
-      Space Travelers' Hub
-    </h1>
+      <img
+        alt="logo"
+        class="logo"
+        src="/planet.png"
+      />
+      <h1
+        class="navTitle"
+      >
+        Space Travelers' Hub
+      </h1>
+    </div>
     <nav>
       <a
         aria-current="page"
