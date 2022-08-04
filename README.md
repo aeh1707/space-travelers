@@ -33,13 +33,13 @@ run `npm run start`.
 
 ## Authors
 
-👤 **Author01**
+👤 **Abdelhadi Hireche**
 
 - GitHub: [@aeh1707](https://github.com/githubhandle)
 - Twitter: [@aeh1707](https://twitter.com/twitterhandle)
 - LinkedIn: [abdelhadi-hireche](https://linkedin.com/in/linkedinhandle)
 
-👤 **Author01**
+👤 **Sajid Munawar**
 
 - GitHub: [@sajid-munawar](https://github.com/githubhandle)
 - Twitter: [@sajid-munawar/](https://twitter.com/twitterhandle)
