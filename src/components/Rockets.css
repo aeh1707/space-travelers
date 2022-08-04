@@ -11,3 +11,28 @@
 .rocket-info {
   width: 70vw;
 }
+
+.reserved-badge {
+  color: azure;
+  font-size: 0.8rem;
+  padding: 3px;
+  background-color: rgb(15, 161, 161);
+  border: 2px solid rgb(185, 185, 35);
+  border-radius: 10px;
+}
+
+.btn {
+  font-size: 1.2rem;
+  padding: 8px;
+  border-radius: 15px;
+}
+
+.rocket-reserve.btn {
+  color: azure;
+  background-color: orangered;
+}
+
+.rocket-cancel.btn {
+  color: orangered;
+  background-color: aquamarine;
+}
