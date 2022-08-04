@@ -41,9 +41,9 @@ run `npm run start`.
 
 👤 **Sajid Munawar**
 
-- GitHub: [@sajid-munawar](https://github.com/githubhandle)
-- Twitter: [@sajid-munawar/](https://twitter.com/twitterhandle)
-- LinkedIn: [sajid-munawar](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/sajid-munawar)
+- Twitter: [@SajidMunawarDev](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/sajid-munawar-41ba26180/)
 
 ## 🤝 Contributing
 
