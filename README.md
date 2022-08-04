@@ -35,9 +35,9 @@ run `npm run start`.
 
 👤 **Abdelhadi Hireche**
 
-- GitHub: [@aeh1707](https://github.com/githubhandle)
-- Twitter: [@aeh1707](https://twitter.com/twitterhandle)
-- LinkedIn: [abdelhadi-hireche](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@aeh1707](https://github.com/aeh1707)
+- Twitter: [@aeh1707](https://twitter.com/aeh1707)
+- LinkedIn: [abdelhadi-hireche](https://linkedin.com/in/abdelhadi-hireche)
 
 👤 **Sajid Munawar**
 
