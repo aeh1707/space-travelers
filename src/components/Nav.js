@@ -4,8 +4,10 @@ import { NavLink } from 'react-router-dom';
 const Nav = () => (
   <div className="nav-container">
     <div className="navbar">
-      <img src="/planet.png" alt="logo" className="logo" />
-      <h1 className="navTitle">Space Travelers&apos; Hub</h1>
+      <div className="brand">
+        <img src="/planet.png" alt="logo" className="logo" />
+        <h1 className="navTitle">Space Travelers&apos; Hub</h1>
+      </div>
       <nav>
 
         <NavLink
