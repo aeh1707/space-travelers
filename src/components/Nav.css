@@ -21,3 +21,10 @@ nav a {
 .logo {
   width: 80px;
 }
+
+.brand {
+  display: flex;
+  align-items: center;
+  width: 40vw;
+  gap: 15px;
+}
