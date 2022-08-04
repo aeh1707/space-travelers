@@ -10,16 +10,12 @@ import Rockets from './components/Rockets';
 import Nav from './components/Nav';
 import Missions from './components/Missions';
 import MyProfile from './components/MyProfile';
-import fetchMissions from './redux/missions/missionActions';
 import fetchRockets from './redux/rockets/rocketsFetch';
 
 const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchRockets());
-  }, []);
-  useEffect(() => {
-    dispatch(fetchMissions());
   }, []);
   const state = useSelector((state) => state);
   return (
